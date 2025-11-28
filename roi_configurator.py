@@ -225,7 +225,7 @@ def draw_and_collect_rois(image_path, existing_cfg=None):
             display = draw_text(display, "左键拖拽画框; u撤销; c清空; d丢弃黄色; s保存; q退出; ESC退出", (20, 45), (255, 255, 255), 1.0, 2)
             display = draw_text(display, f"已存在字段: {existing_count}  | 新增框: {len(rois)}", (20, 85), (255, 255, 255), 0.9, 2)
             display = draw_text(display, "提示: 每个框画完即命名；按 s 一次性保存", (20, 115), (255, 255, 255), 0.85, 2)
-            display = draw_text(display, "组合键: Ctrl+S 保存 | Ctrl+Z 撤销 | Ctrl+D 丢弃 | Ctrl+C 清空 | Ctrl+Q 退出", (20, 155), (255, 255, 255), 0.9, 2)
+            display = draw_text(display, "提示: 仅按字母键执行操作（s/u/c/d/q），避免 Ctrl 组合键", (20, 155), (255, 255, 255), 0.9, 2)
 
             cv2.imshow(window_name, display)
             key = cv2.waitKey(20) & 0xFF
@@ -260,16 +260,16 @@ def draw_and_collect_rois(image_path, existing_cfg=None):
 
             if key == 27:  # ESC
                 return None
-            elif (key == ord('u') or key == 26 or key == 21) and rois:  # u 或 Ctrl+Z(26)/Ctrl+U(21)
+            elif (key == ord('u')) and rois:  # 仅支持字母键操作，避免 Ctrl 组合键
                 rois.pop()
-            elif key == ord('c') or key == 3:  # c 或 Ctrl+C(3)
+            elif key == ord('c'):  # 仅支持字母键操作
                 rois.clear()
-            elif key == ord('d') or key == 4:  # d 或 Ctrl+D(4)
+            elif key == ord('d'):  # 仅支持字母键操作
                 # 丢弃已存在的黄色字段，仅保留本次新增
                 existing_cfg = None
-            elif key == ord('q') or key == 17:  # q 或 Ctrl+Q(17)
+            elif key == ord('q'):  # 仅支持字母键操作
                 return None
-            elif key == ord('s') or key == 19:  # s 或 Ctrl+S(19)
+            elif key == ord('s'):  # 仅支持字母键操作
                 # 保存：合并并去重（按名称去重，后者覆盖前者）
                 def _merge_dedup(existing_list, new_list):
                     by_name = {}

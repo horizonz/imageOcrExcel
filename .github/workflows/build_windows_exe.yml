@@ -17,14 +17,18 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pyinstaller rapidocr-onnxruntime pillow pandas tqdm numpy opencv-python openpyxl
-      - name: Build EXE
+      - name: Build EXE (console)
         run: |
-          pyinstaller -F -w run_pipeline.py --collect-data rapidocr_onnxruntime
+          pyinstaller -F --name run_pipeline_console run_pipeline.py --collect-data rapidocr_onnxruntime
+      - name: Build EXE (windowed)
+        run: |
+          pyinstaller -F -w --name run_pipeline_windowed run_pipeline.py --collect-data rapidocr_onnxruntime
       - name: Prepare release folder
         run: |
           mkdir release
           mkdir release\run_pipeline
-          copy dist\run_pipeline.exe release\run_pipeline\
+          copy dist\run_pipeline_console.exe release\run_pipeline\
+          copy dist\run_pipeline_windowed.exe release\run_pipeline\
           mkdir release\run_pipeline\images
       - name: Upload artifact
         uses: actions/upload-artifact@v4

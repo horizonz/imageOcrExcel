@@ -1,0 +1,13 @@
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+starting mass_ocr_to_excel_rapidocr
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+config saved, starting OCR
+starting mass_ocr_to_excel_rapidocr
+done, opening output dir
