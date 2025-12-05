@@ -11,3 +11,65 @@ starting roi_configurator
 config saved, starting OCR
 starting mass_ocr_to_excel_rapidocr
 done, opening output dir
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+config saved, starting OCR
+starting mass_ocr_to_excel_rapidocr
+done, opening output dir
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+config saved, starting OCR
+starting mass_ocr_to_excel_rapidocr
+done, opening output dir
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+config saved, starting OCR
+starting mass_ocr_to_excel_rapidocr
+done, opening output dir
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+config saved, starting OCR
+starting mass_ocr_to_excel_rapidocr
+done, opening output dir
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+config saved, starting OCR
+starting mass_ocr_to_excel_rapidocr
+done, opening output dir
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+config saved, starting OCR
+starting mass_ocr_to_excel_rapidocr
+done, opening output dir
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+config saved, starting OCR
+starting mass_ocr_to_excel_rapidocr
+done, opening output dir
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+roi_configurator error: local variable 'existing_count' referenced before assignment
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+roi_configurator error: local variable 'existing_count' referenced before assignment
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+config saved, starting OCR
+starting mass_ocr_to_excel_rapidocr
+done, opening output dir
+BASE_DIR=/Users/a1-6/Desktop/pythonProgject/python_imageToText_git
+Checking images dir: /Users/a1-6/Desktop/pythonProgject/python_imageToText_git/images
+starting roi_configurator
+config saved, starting OCR
+starting mass_ocr_to_excel_rapidocr
+done, opening output dir

@@ -74,7 +74,6 @@ def run():
         log("roi_config.json missing after roi")
         return 1
     else:
-        alert("配置已保存，开始识别…")
         log("config saved, starting OCR")
 
     try:
@@ -90,7 +89,6 @@ def run():
         alert(f"批量识别流程异常：{e}")
         log(f"ocr error: {e}")
         return 1
-
     alert("处理完成，结果已输出到 output 目录。")
     log("done, opening output dir")
     try:

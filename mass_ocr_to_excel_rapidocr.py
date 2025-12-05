@@ -266,9 +266,16 @@ def main():
             df[col] = df[col].astype(str)
         except Exception:
             pass
-    df.to_csv(out_csv, index=False)
-    df.to_excel(out_xlsx, index=False)
-    print(f"\n🎉 All done! Results saved to {out_xlsx}", flush=True)
+    # 保存输出：先 CSV，后 Excel；Excel 失败时给出提示
+    try:
+        df.to_csv(out_csv, index=False)
+    except Exception as e:
+        print(f"[WARN] CSV 保存失败: {e}", flush=True)
+    try:
+        df.to_excel(out_xlsx, index=False)
+        print(f"\n🎉 All done! Results saved to {out_xlsx}", flush=True)
+    except Exception as e:
+        print(f"[WARN] Excel 保存失败: {e}. 已生成 CSV: {out_csv}。如需 Excel，请安装 openpyxl 或检查路径权限。", flush=True)
 
 
 if __name__ == "__main__":
